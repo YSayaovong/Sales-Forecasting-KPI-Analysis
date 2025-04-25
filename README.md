@@ -1,6 +1,8 @@
 # 📊 Sales Forecasting & KPI Analysis
 Power BI | Time Series Forecasting | Business Intelligence | KPI Dashboard
+
 GitHub: https://github.com/YSayaovong/Sales-Forecasting-KPI-Analysis
+
 Date: February 2025
 
 # 📌 Business Objective
