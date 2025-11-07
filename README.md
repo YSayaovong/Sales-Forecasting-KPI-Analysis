@@ -1,40 +1,71 @@
-# Sales Forecasting & KPI Analytics Solution
+## 📚 Case Study: Sales Decline Investigation & Forecast Recovery
 
-## Executive Summary  
-This project delivers an enterprise-grade analytics solution for forecasting sales performance and monitoring key performance indicators (KPIs) across product lines and business units. Leveraging historical sales data, statistical modelling, and interactive dashboards, it empowers decision-makers with actionable insights to optimize revenue strategy.
+### ✅ Scenario
+A mid-sized retail company experiences a noticeable drop in quarterly sales.  
+Executives report:
+- Sales are **down 14%** compared to the same period last year.
+- Two major product lines are underperforming.
+- Regional managers believe the issue is marketing spend; finance believes it's pricing; operations blames inventory availability.
 
-## Business Problem  
-Many organizations lack timely, reliable sales forecasts and actionable KPI tracking systems. Without them, they struggle to:  
-- Anticipate demand and align operations accordingly  
-- Identify sales drivers and growth opportunities  
-- Monitor performance deviations and adjust strategy proactively  
-- Present clear, executive-ready visualizations of sales trends and business health  
+The company needs clarity, and fast.
 
-This solution addresses those gaps by combining rigorous data processing, predictive analytics, and business-facing dashboards.
+Your Sales Forecasting & KPI Analytics Solution is deployed to diagnose the problem and produce an actionable forecast.
 
-## Solution Architecture & Workflow  
-1. **Data Ingestion & ETL**  
-   - Collected raw transaction and product-metadata from multiple sources  
-   - Executed data cleaning and normalization in Python (pandas, NumPy)  
-   - Loaded processed data into a structured relational database (or data warehouse) for downstream analysis  
-2. **Forecasting Engine & KPI Computation**  
-   - Developed time-series models to project future sales volumes, revenue and growth rates  
-   - Defined and computed core business KPIs: Sales Growth %, Forecast Accuracy, Product Line Contribution, Quarter-over-Quarter Variance  
-   - Conducted scenario analysis to test “what-if” assumptions (e.g., promotional lift, price change, market expansion)  
-3. **Visualization & Dashboarding**  
-   - Built an interactive dashboard using Power BI (or comparable BI tool) that offers:  
-     - Executive summary page with high-level KPIs and trends  
-     - Drill-down pages by product line, region and time period  
-     - Forecast vs Actual comparison visuals and deviation alerts  
-   - Enabled self-service analytics for business users: filter by region, product, time period; export reports for stakeholder review  
-4. **Outcome & Business Impact**  
-   - Enhanced forecast accuracy by X% (actual number to fill) year-over-year  
-   - Provided insight into top 3 revenue drivers and guided strategic budget allocation  
-   - Improved data-driven decision-making at the executive level by delivering clear, digestible dashboards for cross-functional teams  
+---
 
-## Tech Stack  
-- Python (data cleaning, modeling)  
-- SQL (data warehousing, ETL)  
-- Power BI (dashboarding)  
-- Excel (ad-hoc data validation & modeling)  
-- GitHub (version control & project documentation)
+### ✅ Step 1 — Data Review & KPI Breakdown
+After ingesting the last 36 months of sales history:
+
+**Findings:**
+- The decline is concentrated in **Product Line B**, not across the whole business.
+- Region West accounts for **61%** of the downturn.
+- Forecast Accuracy dropped from **92% → 78%**, indicating a shift in behavior.
+- Quarter-over-quarter growth for Product Line B is **–22%**, while others remain stable.
+
+The dashboard highlights the drop instantly with:
+- Red variance indicators  
+- Forecast vs. Actual deviation charts  
+- Contribution-to-revenue visuals  
+
+---
+
+### ✅ Step 2 — Forecast Modeling
+Time-series models (ARIMA / Prophet / Exponential Smoothing) are run on each product line.
+
+**Model Output:**
+- Product Line B expected to continue declining another **8–12% over the next quarter**.
+- Product Line A shows stable seasonality and 5% projected growth.
+- Price elasticity modeling shows a **high sensitivity**: a recent 7% price increase likely caused a portion of the decline.
+
+---
+
+### ✅ Step 3 — Root Cause Insights
+By filtering the dashboard and drilling down:
+
+**Root causes identified:**
+1. **Marketing spend dropped 40%** in the West region due to budget delays.
+2. Competitor launched a similar product at **6% lower price**.
+3. Inventory coverage dipped below **2 weeks of supply** during a seasonal demand spike.
+
+None of these were clear before because data lived in separate systems.
+
+---
+
+### ✅ Step 4 — Executive Recommendations
+Using the forecast and KPI findings, the model recommends:
+
+- Roll back the price increase or add promotional discounts (expected +6% rebound).  
+- Restore regional marketing budget to baseline (expected +4–7% revenue lift).  
+- Increase inventory buffer for high-demand weeks (+3% revenue protection).  
+
+Executives receive this summary directly through the Power BI executive dashboard.
+
+---
+
+### ✅ Step 5 — Outcome
+After implementing changes:
+
+- Sales decline reversed within 2 reporting cycles.  
+- Forecast Accuracy improved to **91%**.  
+- Product Line B stabilized, showing **+3% QoQ recovery**.  
+- Leadership now uses the dashboard weekly for strategy alignment.  
