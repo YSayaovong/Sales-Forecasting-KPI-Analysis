@@ -9,8 +9,6 @@ Executives report:
 
 The company needs clarity, and fast.
 
-Your Sales Forecasting & KPI Analytics Solution is deployed to diagnose the problem and produce an actionable forecast.
-
 ---
 
 ### ✅ Step 1 — Data Review & KPI Breakdown
