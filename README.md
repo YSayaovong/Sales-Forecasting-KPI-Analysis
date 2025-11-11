@@ -1,69 +1,96 @@
-## 📚 Case Study: Sales Decline Investigation & Forecast Recovery
+# 📚 Case Study: Sales Decline Investigation & Forecast Recovery  
+*(SQL + Python + Power BI — Real-World Retail Analytics)*
 
-### ✅ Scenario
-A mid-sized retail company experiences a noticeable drop in quarterly sales.  
-Executives report:
-- Sales are **down 14%** compared to the same period last year.
-- Two major product lines are underperforming.
-- Regional managers believe the issue is marketing spend; finance believes it's pricing; operations blames inventory availability.
-
-The company needs clarity, and fast.
+A mid-sized retail company experiences a sudden **14% quarterly sales decline**.  
+Executives disagree on the cause — some blame pricing, others blame marketing, others think it’s an inventory problem.  
+The analytics team deploys a **Sales Investigation & Forecast Recovery Dashboard** to locate the true drivers and recover performance.
 
 ---
 
-### ✅ Step 1 — Data Review & KPI Breakdown
-After ingesting the last 36 months of sales history:
+## ✅ Step 1 — Data Review & KPI Breakdown
 
-**Findings:**
-- The decline is concentrated in **Product Line B**, not across the whole business.
-- Region West accounts for **61%** of the downturn.
-- Forecast Accuracy dropped from **92% → 78%**, indicating a shift in behavior.
-- Quarter-over-quarter growth for Product Line B is **–22%**, while others remain stable.
+After ingesting **36 months** of transaction-level sales history:
 
-The dashboard highlights the drop instantly with:
+### 🔎 Key Findings
+- The downturn is **NOT company-wide**.  
+- The drop is isolated to **Product Line B**, responsible for **61%** of the decline.  
+- Forecast accuracy has slipped from **92% → 78%**, signaling unstable customer behavior.  
+- Quarter-over-quarter decline for Product Line B hits **–22%**, while other lines stay flat or grow.
+
+Power BI reveals the issue instantly through:
 - Red variance indicators  
-- Forecast vs. Actual deviation charts  
-- Contribution-to-revenue visuals  
+- Forecast vs. Actual deviation visuals  
+- Region + product contribution analysis  
+
+The data shows the decline is **surgical**, not systemic.
 
 ---
 
-### ✅ Step 2 — Forecast Modeling
-Time-series models (ARIMA / Prophet / Exponential Smoothing) are run on each product line.
+## ✅ Step 2 — Forecast Modeling (Python)
 
-**Model Output:**
-- Product Line B expected to continue declining another **8–12% over the next quarter**.
-- Product Line A shows stable seasonality and 5% projected growth.
-- Price elasticity modeling shows a **high sensitivity**: a recent 7% price increase likely caused a portion of the decline.
+The analytics team runs multiple time-series models:
+- **ARIMA**
+- **Prophet**
+- **Exponential Smoothing**
 
----
+### 📊 Model Output
+- Product Line B projected to decline another **8–12% next quarter** if nothing changes.  
+- Product Line A stable with **+5% expected growth**.  
+- Pricing elasticity model shows **high sensitivity** — the recent **7% price increase** heavily impacts demand.
 
-### ✅ Step 3 — Root Cause Insights
-By filtering the dashboard and drilling down:
-
-**Root causes identified:**
-1. **Marketing spend dropped 40%** in the West region due to budget delays.
-2. Competitor launched a similar product at **6% lower price**.
-3. Inventory coverage dipped below **2 weeks of supply** during a seasonal demand spike.
-
-None of these were clear before because data lived in separate systems.
+Forecasting confirms the decline is **predictable**, not random.
 
 ---
 
-### ✅ Step 4 — Executive Recommendations
-Using the forecast and KPI findings, the model recommends:
+## ✅ Step 3 — Root Cause Insights
 
-- Roll back the price increase or add promotional discounts (expected +6% rebound).  
-- Restore regional marketing budget to baseline (expected +4–7% revenue lift).  
-- Increase inventory buffer for high-demand weeks (+3% revenue protection).  
+A cross-functional drill-down reveals three overlooked issues:
 
-Executives receive this summary directly through the Power BI executive dashboard.
+### 🔍 Root Causes  
+1. **Marketing spend in the West dropped 40%** due to budget delays.  
+2. A major competitor launched a similar product at **6% lower price**.  
+3. Inventory coverage fell below **2 weeks of supply** during seasonal demand spikes.  
+
+Each department was partially right — the data connects all three.
 
 ---
 
-### ✅ Step 5 — Outcome
-After implementing changes:
+## ✅ Step 4 — Executive Recommendations
 
-- Sales decline reversed within 2 reporting cycles.  
-- Forecast Accuracy improved to **91%**.  
-- Product Line B stabilized, showing **+3% QoQ recovery**.  
-- Leadership now uses the dashboard weekly for strategy alignment.  
+The dashboard produces data-backed actions:
+
+- **Rollback the 7% price increase** or offer promotions  
+  - Expected **+6% revenue rebound**  
+- **Restore marketing spend** in Region West  
+  - Expected **+4–7% lift**  
+- **Increase inventory buffer** before seasonal spikes  
+  - Expected **+3% revenue protection**  
+
+These recommendations appear directly in the CEO dashboard as scenario simulations.
+
+---
+
+## ✅ Step 5 — Outcome
+
+After leadership implements the changes:
+
+- The sales decline **reverses within 2 reporting cycles**  
+- Forecast accuracy rises back to **91%**  
+- Product Line B stabilizes with **+3% QoQ recovery**  
+- Executive team adopts the dashboard as a weekly alignment tool  
+
+The investigation proves the value of **integrated retail analytics** across forecasting, pricing, marketing, and inventory functions.
+
+---
+
+## ✅ Summary  
+
+This case study showcases how a Data Analyst uses SQL, Python forecasting models, and Power BI to:
+- Pinpoint the exact drivers of a sales downturn  
+- Quantify financial impact  
+- Build an accurate forecast  
+- Recommend corrective actions  
+- Validate improvements through refreshed KPIs  
+
+A true end-to-end **business intelligence investigation** that solves a real operational problem.
+
